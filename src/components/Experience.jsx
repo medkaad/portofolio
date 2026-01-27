@@ -1,8 +1,14 @@
 import Badge from "./Badge";
+import { motion } from "framer-motion";
 
 function Experience() {
   return (
-    <section id="experience" className="py-20 bg-gray-100 px-6">
+    <motion.section
+  className="py-20 bg-gray-100 px-6"
+  initial={{ scale: 0.9, opacity: 0 }}
+  animate={{ scale: 1, opacity: 1 }}
+  transition={{ duration: 0.4 }}
+>
       <div className="max-w-5xl mx-auto">
         <h2 className="text-3xl font-bold mb-10">Expériences</h2>
 
@@ -91,7 +97,7 @@ function Experience() {
 
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 }
 
