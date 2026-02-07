@@ -52,7 +52,7 @@ function Hero() {
         >
           {/* CV = lien externe → <a> OK */}
           <a
-            href="/cv.pdf"
+            href="/CV KARDAL Mohammed.pdf"
             target="_blank"
             className="bg-blue-600 text-white px-8 py-3 rounded-lg font-medium hover:bg-blue-700 transition"
           >
