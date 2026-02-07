@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 function Hero() {
   return (
@@ -10,8 +11,7 @@ function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
         >
-          Mohammed{" "}
-          <span className="text-blue-600">Kardal</span>
+          Mohammed <span className="text-blue-600">Kardal</span>
         </motion.h1>
 
         <motion.h2
@@ -50,19 +50,22 @@ function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.5 }}
         >
+          {/* CV = lien externe → <a> OK */}
           <a
             href="/cv.pdf"
+            target="_blank"
             className="bg-blue-600 text-white px-8 py-3 rounded-lg font-medium hover:bg-blue-700 transition"
           >
             Télécharger le CV
           </a>
 
-          <a
-            href="#projects"
+          {/* Navigation interne → Link */}
+          <Link
+            to="/projects"
             className="border border-blue-600 text-blue-600 px-8 py-3 rounded-lg font-medium hover:bg-blue-50 transition"
           >
             Voir mes projets
-          </a>
+          </Link>
         </motion.div>
       </div>
     </section>
