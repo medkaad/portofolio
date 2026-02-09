@@ -2,15 +2,6 @@ import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 
 function Hero() {
-  const handleCvClick = () => {
-    if (window.gtag) {
-      window.gtag("event", "download_cv", {
-        event_category: "engagement",
-        event_label: "CV Mohammed Kardal",
-      });
-    }
-  };
-
   return (
     <section className="min-h-screen flex items-center bg-white">
       <div className="max-w-5xl mx-auto px-6 text-center">
@@ -59,18 +50,16 @@ function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.5 }}
         >
-          {/* CV avec tracking GA */}
+          {/* CV = lien externe → <a> OK */}
           <a
             href="/CV KARDAL Mohammed.pdf"
             target="_blank"
-            rel="noopener noreferrer"
-            onClick={handleCvClick}
             className="bg-blue-600 text-white px-8 py-3 rounded-lg font-medium hover:bg-blue-700 transition"
           >
             Télécharger le CV
           </a>
 
-          {/* Navigation interne */}
+          {/* Navigation interne → Link */}
           <Link
             to="/projects"
             className="border border-blue-600 text-blue-600 px-8 py-3 rounded-lg font-medium hover:bg-blue-50 transition"
