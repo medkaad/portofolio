@@ -23,7 +23,7 @@ function Experience() {
             Développeur Web – Projet Django (Immersion)
           </h3>
           <p className="text-sm text-gray-500 mb-4">
-            Projet en cours
+            Arimayi · 12/2025 – 02/2026
           </p>
 
           <ul className="list-disc pl-5 text-gray-700 space-y-2">
